@@ -26,8 +26,8 @@ function Register({ registrationProfile }) {
   return (
     <form className="meet" onSubmit={handleSubmit} name="meet-form">
       <h2 className="meet__heder">Регистрация</h2>
-      <input type="email" className="meet__input" placeholder="Email" required onChange={handleEmailProfile}></input>
-      <input type="password" className="meet__input" placeholder="Пароль" required onChange={handlePasswordProfile} autoComplete="off"></input>
+      <input type="email" className="meet__input" placeholder="Email" value={`${emailProfile}`} required onChange={handleEmailProfile}></input>
+      <input type="password" className="meet__input" placeholder="Пароль" value={`${passwordProfile}`} required onChange={handlePasswordProfile} autoComplete="off"></input>
       <button className="meet__btn" aria-label="submit" type="submit">Зарегистрироваться</button>
       <Link to="/signin" className="meet__tologin">Уже зарегистрированы? Войти</Link>
     </form>

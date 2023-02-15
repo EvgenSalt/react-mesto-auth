@@ -8,7 +8,7 @@ function InfoTooltip({ isOpen, isSuccess, onClose }) {
       <div className="popup__container">
         <button aria-label="close" className="popup__close popup__close_show-img" type="button" onClick={onClose}></button>
         <div className="popup__tooltip">
-          <img src={isSuccess ? Success : Fail} className="popup__imgtooltip" />
+          <img src={isSuccess ? Success : Fail} alt={isSuccess ? "Удачно" : "Не удачно"} className="popup__imgtooltip" />
           <h3 className="popup__infotooltip">
             {isSuccess ? 'Вы успешно зарегистрировались!' : 'Что-то пошло не так! Попробуйте ещё раз.'}
           </h3>

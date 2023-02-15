@@ -20,6 +20,7 @@ import AddPlacePopup from "./AddPlacePopup";
 import Login from "./Login";
 import Register from "./Register";
 import InfoTooltip from "./InfoTooltip";
+import AuthForm from "./AuthForm";
 
 import ProtectedRoute from './ProtectedRoute';
 import { auth } from "../utils/auth";
@@ -67,7 +68,7 @@ function App() {
           console.log(err)
         })
     }
-  }, []);
+  }, [history]);
 
   useEffect(() => {
     Promise.all([api.getInitialCards()])
@@ -205,10 +206,16 @@ function App() {
             onCardLike={handleCardLike}
             onCardDelete={handleCardDelete} />
           <Route path="/signup">
-            <Register registrationProfile={handleRegistration} />
+            <AuthForm
+              authProfile={handleRegistration}
+              status={"signup"}
+            />
           </Route>
           <Route path="/signin">
-            <Login loginProfile={handleLogin} />
+            <AuthForm
+              authProfile={handleLogin}
+              status={"signin"}
+            />
           </Route>
           <Route>
             {loggedIn ? <Redirect to="/" /> : <Redirect to="/signin" />}
