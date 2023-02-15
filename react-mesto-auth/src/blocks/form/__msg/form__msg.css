@@ -1,0 +1,19 @@
+.form__msg {
+    width: 358px;
+    height: 30px;
+    align-self: start;
+    color: #FF0000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    visibility: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media (max-width: 525px) {
+    .form__msg {
+      width: 238px;
+      margin: 0 0 13px 20px;
+    }
+}

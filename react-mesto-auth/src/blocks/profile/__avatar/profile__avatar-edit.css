@@ -1,0 +1,22 @@
+.profile__avatar-edit {
+  position: absolute;
+  background: url(../../../images/EditBtnAvatar.svg) center no-repeat;
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.profile__avatar-edit:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: opacity .3s;
+  background-color: #000;
+}
+
+@media (max-width: 720px) {
+  .profile__avatar-edit {
+    left: calc(50% - 54px);
+  }
+}

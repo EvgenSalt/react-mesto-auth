@@ -1,0 +1,11 @@
+.popup__card {
+  box-sizing: border-box;
+  max-width: 75vw;
+  max-height: 75vh;
+}
+
+@media (max-width: 525px) {
+  .popup__card {
+    margin-top: 123px;
+  }
+}

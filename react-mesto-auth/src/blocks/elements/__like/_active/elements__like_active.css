@@ -1,0 +1,5 @@
+.elements__like_active {
+  transition: .3s ease;
+  opacity: 1;
+  background: transparent url(../../../../images/Union.svg) center / contain no-repeat;
+}

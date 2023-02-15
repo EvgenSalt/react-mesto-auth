@@ -1,0 +1,16 @@
+.profile__info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, max-content));
+  grid-template-areas: 
+  "avatar name edit-btn"
+  "avatar description .";
+}
+
+@media (max-width: 720px) {
+  .profile__info {
+    grid-template-areas: 
+    "avatar avatar avatar"
+    "name . edit-btn "
+    "description description .";
+  }
+}

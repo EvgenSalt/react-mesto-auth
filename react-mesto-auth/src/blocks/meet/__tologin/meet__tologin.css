@@ -1,0 +1,16 @@
+.meet__tologin {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  cursor: pointer;
+}
+
+.meet__tologin:hover {
+  transition: .3s ease;
+  opacity: .85;
+}

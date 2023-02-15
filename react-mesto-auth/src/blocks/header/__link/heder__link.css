@@ -1,0 +1,11 @@
+.heder__link {
+  color: #A9A9A9;
+  text-align: right;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.heder__link:hover {
+  transition: .3s ease;
+  opacity: .85;
+}

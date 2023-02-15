@@ -1,0 +1,19 @@
+.form__input {
+  width: 358px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 7px;
+  margin: 0 auto 5px;
+}
+
+@media (max-width: 525px) {
+  .form__input {
+    width: 238px;
+    margin: 0 0 5px 20px;
+    padding-bottom: 10px;
+  }
+}

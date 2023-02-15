@@ -1,0 +1,16 @@
+.page {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+  width: 100%;
+  padding: 45px 0 0 0;
+  background-color: #000;
+  min-height: 100vh;
+}
+
+@media (max-width: 940px) {
+  .page {
+    padding: 28px 0;
+  }
+}

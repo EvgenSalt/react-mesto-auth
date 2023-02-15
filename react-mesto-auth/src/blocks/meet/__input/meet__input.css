@@ -1,0 +1,18 @@
+.meet__input {
+  border: none;
+  margin: 0 0 30px;
+  background-color: transparent;
+  color: #CCCCCC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border-bottom: 2px solid #CCCCCC;
+  padding: 0 0 9px;
+  width: 100%;
+  outline: none;
+}
+
+.meet__input:nth-child(3n) {
+  margin: 0;
+}

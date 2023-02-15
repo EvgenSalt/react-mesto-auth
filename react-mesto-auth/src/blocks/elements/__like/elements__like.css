@@ -1,0 +1,15 @@
+.elements__like {
+  margin: 22px 20px 0 20px;
+  min-width: 22px;
+  min-height: 19px;
+  border: none;
+  padding: 0;
+  background: transparent url(../../../images/Group.svg) center / contain no-repeat;
+  cursor: pointer;
+  background-size: auto;
+}
+
+.elements__like:hover {
+  transition: .3s ease;
+  opacity: .5;
+}
