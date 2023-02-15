@@ -11,6 +11,15 @@
   padding: 0 0 9px;
   width: 100%;
   outline: none;
+  /* box-shadow: inset 0 0 0 30px #000; */
+}
+
+.meet__input:autofill,
+.meet__input:autofill:hover,
+.meet__input:autofill:active,
+.meet__input:autofill:focus {
+  box-shadow: 0 0 0 30px #000 inset !important;
+  -webkit-text-fill-color: #ccc;
 }
 
 .meet__input:nth-child(3n) {
